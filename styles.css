@@ -1,0 +1,390 @@
+h1, h2, h3, p, a, .row {
+    font-weight: 200;
+    color: rgb(63, 63, 63);
+    font-family: "Montserrat", sans-serif;
+}
+ 
+html,body {overflow-x: hidden;}
+ 
+#translations {
+    color: white;
+}
+ 
+.sidebar-text {
+    text-decoration: none;
+}
+ 
+h1 {
+    font-size: 60px;
+}
+ 
+p {
+    font-size: 20px;
+}
+
+.line {
+    height: 2px;
+    margin-left: -5%;
+    border-width: 0;
+    color: rgb(100, 100, 100);
+    background-color:rgb(100,100,100);
+    margin-bottom: 8%;
+}
+
+.white-line {
+    height: 2px;
+    margin-left: -5%;
+    border-width: 0;
+    color: white;
+    background-color:white;
+    margin-top: 8%;
+}
+
+
+
+/* sidebar */
+/* .sidebar {
+    width: 20%;
+    float: left;
+    padding-top: 5%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    background-image: url("images/art-blossoms.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    backdrop-filter: opacity(20%)
+
+}
+
+#sidebar-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: opacity(20%);
+}
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+} */
+
+
+.sidebar {
+    width: 20%;
+    float: left;
+    padding-top: 5%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    backdrop-filter: opacity(20%)
+
+}
+
+#sidebar-box {
+    padding: 10% 0%;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* backdrop-filter: opacity(50%); */
+}
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+    filter: opacity(10%);
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+#body {
+    margin-left: 20%;
+    width: 80%;
+    /* padding-top: 0; */
+    /* overflow: hidden; */
+}
+ 
+.sidebar-name {
+    margin-bottom: 15%;
+    font-size: 45px;
+}
+ 
+.sidebar-title {
+    margin-bottom: 15%;
+   
+}
+ 
+.sidebar-text {
+    color: rgb(87, 87, 87);
+}
+ 
+.sidebar-text:hover {
+    font-weight:800;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+ 
+.pic {
+    max-width: 80%;
+}
+ 
+
+ 
+
+ 
+.section {
+    padding-left: 5%;
+}
+ 
+ 
+/*about section*/
+#about-me {
+    background-color: #536f85;
+    /* background-color: rgb(143, 143, 143); */
+    /* height: 800px; */
+    padding-bottom: 5%;
+}
+ 
+.white-text {
+    color: white;
+}
+ 
+.section-title {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+#about-me-title {
+    margin-bottom: 2%;
+}
+ 
+/* top, right, bottom, left */
+#about-me-text {
+    /* float: right;  */
+    /* width: 300px; */
+    /* margin-right: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+ 
+/* apps! */
+#apps {
+    background-color: #dfdedc;
+    /* background-color:rgb(214, 214, 214); */
+}
+ 
+/* translations :) */
+#translations {
+    background-color: #8f625d;
+    /* background-color:rgb(143, 143, 143); */
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+ 
+.book-title {
+    margin-bottom: 20px;
+}
+ 
+.book-link {
+    color: rgb(129, 177, 255);
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+ 
+.book-link:hover, .web-link:hover {
+    color: rgb(56, 90, 139);
+}
+ 
+#book-date {
+    margin-top: 11%;
+}
+ 
+.book {
+    margin-bottom: 7%;
+}
+
+.book-pic {
+    border: 3px solid #3b3b3b;
+}
+
+.book-length {
+    margin-top:15%;
+}
+
+.vertical-book {
+    max-width: 50%;
+}
+
+
+.bigger-book {
+    max-width: 70%; 
+}
+ 
+#apps {
+    padding-bottom: 5%;
+}
+ 
+.app {
+    margin-bottom: 8%;
+}
+ 
+.app-pic {
+    border: 10px solid #3b3b3b;
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+    border-radius: 10px;
+    max-width: 40%;
+    margin-bottom: 10px;
+    margin-right: 5%;
+}
+
+.pro-pic {
+    max-width: 80%;
+}
+
+.pro-caption {
+    font-size: 18px;
+}
+
+#mt-box {
+    background-color:#cacaca;
+    width: 95%;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.mt-text-box {
+    background-color: white;
+    font-size: 18px;
+    padding: 3%;
+}
+
+li {
+    font-size: 15px;
+}
+
+ul {
+    list-style:none;
+}
+
+.improve::before {
+    font-size: 25px;
+    content: "\25A0";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.improve1::before {
+    color:rgb(107, 201, 88)
+}
+
+.improve2::before {
+    color:rgb(76, 184, 184);
+}
+
+.improve3::before {
+    color:rgb(178, 104, 212);
+}
+
+.improve1-text {
+    background-color: rgb(187, 247, 176);
+}
+
+.improve2-text {
+    background-color: rgb(151, 221, 221);
+}
+
+.improve3-text {
+    background-color:rgb(218, 194, 230);
+}
+ 
+.gem-pic, .checkers-pic, .gem-row-pic {
+    border: 3px solid #3b3b3b;
+}
+ 
+.gem-row-pic {
+    max-width: 90%;
+}
+ 
+.small-pic {
+    max-width: 30%;
+}
+ 
+.checkers-pic {
+    max-width: 65%;
+}
+ 
+.egg-pic, .food-row-pic {
+    border: 10px solid #3b3b3b;
+    border-left-width: 25px;
+    border-right-width: 25px;
+    border-radius: 10px;
+    max-width: 60%;
+    margin-bottom: 10px;
+    margin-right: 5%;
+}
+ 
+.food-row-pic {max-width: 90%;}
+ 
+.app-descrip {
+    padding-right: 5%;
+}
+ 
+.app-link {
+    text-decoration-line: underline;
+}
+
+#websites {
+    background-color: #7f9392;
+    padding-bottom: 10%;
+}
+
+.web-title, .web-pic {
+    margin-left: 5%;
+}
+
+.web-pic {
+    max-width: 90%;
+    margin-top: 5%;
+    border: 3px solid #3b3b3b;
+}
+
+#art {
+    background-color: #c4b28c;
+    padding-bottom: 10%;
+}
+
+.art-pic {
+    border: 3px solid #3b3b3b;
+}
+
+
+@media (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+    #body {
+        width: 100%;
+        margin-left: 0;
+    }
+    .book-length {
+        margin-top: 4%;
+    }
+}

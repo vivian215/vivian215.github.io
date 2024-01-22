@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFWH5PKN08"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LFWH5PKN08');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Vivian Zhao, Lynbrook, Vivian, Zhao, Lynbrook High School, Translation, Chinese to English, Web Development, Trebled Earth, Italented, Noise Alerter, Gem Rush, Chinese Checkers, Hackathons, LHS">
+  <meta name="description" content="My name is Vivian Zhao, and I am currently a senior at Lynbrook High School. This website contains my coding projects, translations, websites, and artwork.">
+  <title>Vivian Zhao | Lynbrook High School</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="canonical" href="http://www.vivianzhao.site"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+ 
+<body>
+<!-- sidebar -->
+<nav class="sidebar" style="position:fixed">
+  <div id="background"><img src="images/art-blossoms.jpg" class="stretch" alt="Painting of pink blossoms in a vase" /></div>
+  <div id="sidebar-box">
+    <h1 class="sidebar-name">Vivian Zhao<span style="font-size:20px"><br>Lynbrook High School</span></h1>
+    <h2 class="sidebar-title"><a class="sidebar-text" href="#about-me">About Me</a></h2>
+    <h2 class="sidebar-title"><a class="sidebar-text" href="#apps">Coding Projects</a></h2>
+    <h2 class="sidebar-title"><a class="sidebar-text" href="#translations">Translations</a></h2>
+    <h2 class="sidebar-title"><a class="sidebar-text" href="#websites">Websites</a></h2>
+    <h2 class="sidebar-title"><a class="sidebar-text" href="#art">Art</a></h2>
+  </div>
+</nav>
+<div id="body" class="container">
+  <!-- About Me -->
+  <div id="about-me" class="row">
+    <h2 class="section-title white-text" id="about-me-title">About Me</h2>
+    <p class="white-text col-sm-12" id="about-me-text">My name is Vivian Zhao, and I am currently a senior at Lynbrook High School. This website contains my coding projects, translations, websites, and artwork! When I'm not working on one of these projects, you'll most likely find me at the piano, on the tennis court, curled up with a good book, or playing video games with friends.</p>
+    <div style="clear:both"></div>
+  </div>
+ 
+  <!-- Apps -->
+  <div id="apps" class="row section">
+    <h2 class="section-title" id="apps-title">Coding Projects</h2>
+    <!-- Noise Alerter Pro -->
+    <div id="noise-alerter-pro" class="row app" style="padding-right:2%">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="book-title">Noise Alerter Pro</h2>
+          <p class="app-descrip">An Android-based home security application that utilizes machine learning and audio signal processing to perform real-time sound analysis and categorize sounds (i.e. smoke detectors, knocking, glass breaking, doorbells, dog barking, and other noises).
+            <br><br>Languages/Tools Used: Python, TensorFlow, Keras, Librosa, Java, Android Studio
+            <br><br><a href="https://youtu.be/JsNId_VzClo" target="blank" class="app-link">Demonstration Video</a>
+            <br><br><a href="https://www.bit.ly/3VPI6js" target="blank" class="app-link">Technical Documentation</a>
+          </p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <img class="pic app-pic pro-pic" src="images/pro-knocking.gif" alt="Gif of app detecting knocks">
+          <p>Detecting knocks;<br>shows spectrogram</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <img class="pic app-pic pro-pic" src="images/pro-smoke.gif" alt="Gif of app detecting smoke detector">
+          <p>Detecting smoke detector;<br>shows FFT graph</p>
+        </div>
+      </div>
+      <div class="row" style="margin-top:2%">
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/decibel.png" alt="Closeup of decibel meter and audio signal">
+          <p class="pro-caption">Decibel meter (top): tracks volume in real time<br>Audio signal (bottom): red area means detection has been triggered</p>
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/spectrogram.png" alt="Closeup of spectrogram during knocking">
+          <p class="pro-caption">Frequency domain over time for three sets of knocks</p>
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/classification.png" alt="Closeup of machine learning detection results">
+          <p class="pro-caption">Right: bar heights represent likelihood of each sound; for example, 4 out of 5 predictions showed a high probability for pro-knocking<br>Left: length of bar represents overall likelihood of a sound</p>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Machine Translation -->
+    <div id="noise-alerter" class="row app">
+      <div class="col-sm-4">
+        <h2 class="book-title">Research Project: Personalized Literary Machine Translation</h2>
+        <p class="app-descrip">To synthesize my passions for computer science and translation, I researched the capabilities and limitations of machine translation by creating a tool for my translation purposes. While Google Translate is quite powerful, it fails to match my translation accuracy and styles. Thus, I decided to use my own translations to fine-tune a pre-trained machine translation model. After segmenting over 2,000 sentences, I used the language pairs as training input to create a custom translation model, which was able to capture the specific terms, tenses, and sentence structures I tend to use. The BLEU score¹ increased from 18.6 (significant errors) to 35.2 (good translation quality). 
+          <br><br>Languages/Tools Used: Python, HANLP and NLTK for sentence segmentation, Google AutoML for training and evaluation
+          <br><br><span style="font-size:15px">[1] a metric for evaluating machine-translated text</span>
+        </p>
+      </div>
+      <div class="col-sm-8" style="padding-left:3%">
+        <h2 style="font-size:25px">Example Outputs (comparison between my custom translation model and standard Google Translate)</h2>
+        <div id="mt-box">
+          <!-- example 1 -->
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Chinese</p>
+              <div class="mt-text-box">船只泊岸，这里的<span class="improve2-text">克隆人</span>军队已不像东方大陆一般戒备森严。</div>
+              <p><br>Improvements:
+                <ul>
+                  <li class="improve improve1">Google Translate produces a run-on sentence; my custom model produces two grammatically correct sentences</li>
+                  <li class="improve improve2">In my translation, I chose to use the term "android" as opposed to the literal translation of "clone." The custom model picked up on this</li>
+                  <li class="improve improve3">I use a casual narration style, so I tend to use apostrophes. The custom model used "wasn't," whereas Google Translate used "was not"</li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p>English (custom model)</p>
+              <div class="mt-text-box">The ship moored ashor<span class="improve1-text">e. </span>The <span class="improve2-text">android</span> army here <span class="improve3-text">wasn't</span> as heavily guarded as it was on the eastern mainland.</div>
+              <p><br>English (Google Translate)</p>
+              <div class="mt-text-box">The ship berthe<span class="improve1-text">d, </span>the <span class="improve2-text">clone</span> army here <span class="improve3-text">was not</span> as heavily guarded as the Eastern Continent.</div>
+            </div>
+          </div>
+          <!-- example 2 -->
+          <div class="row" style="margin-top:5%">
+            <div class="col-sm-6">
+              <p>Chinese</p>
+              <div class="mt-text-box">整个大厅内顿时<span class="improve1-text">炸锅</span>了，<span class="improve2-text">飞洛</span>的子弹<span class="improve3-text">发生了大爆炸</span>。</div>
+              <p><br>Improvements:
+                <ul>
+                  <li class="improve improve1">The Chinese sentence uses an idiomatic expression that literally means "exploded pot." My custom model correctly translated it as "in an uproar," whereas Google Translate used the literal translation of "exploded"</li>
+                  <li class="improve improve2">My custom model correctly translates the name "Feiluo"</li>
+                  <li class="improve improve3">Overall, my custom model produces more varied and interesting sentence structure</li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p>English (custom model)</p>
+              <div class="mt-text-box">In an instant, the entire hall was <span class="improve1-text">in an uproar</span>, as <span class="improve2-text">Feiluo’s</span> bullet <span class="improve3-text">caused a huge explosion</span>.</div>
+              <p><br>English (Google Translate)</p>
+              <div class="mt-text-box">The entire hall suddenly <span class="improve1-text">exploded</span>, and <span class="improve2-text">Fei Luo's</span> bullets <span class="improve3-text">exploded</span>.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Noise Alerter -->
+    <div id="noise-alerter" class="row app">
+      <div class="col-sm-6">
+        <h2 class="book-title">Noise Alerter</h2>
+        <p class="app-descrip">A home security app that alerts the user of any loud noises in their home while they’re away, and allows them to listen to short clips of the noises as the app refreshes in real time.
+          <br><br>Created During: PioneerHacks III
+          <br><br>Awarded: Best Mobile App out of 100+ participants
+          <br><br>Languages/Tools Used: Java, Android Studio, Firebase
+          <br><br><a href="https://devpost.com/software/noise-alerter" target="blank" class="app-link">Full Demo</a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img class="pic app-pic" src="images/noise-alerter.gif" alt="Gif of app detecting volume">
+        <img class="pic app-pic" src="images/noise-alerter-pic.png" alt="Picture of app with list of sound alerts">
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Gem Rush -->
+    <div id="gem-rush" class="row app">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="book-title">Gem Rush</h2>
+          <p class="app-descrip">A 4D endless runner game created for the Cave Automatic Virtual Environment, a mixed-reality platform including three surrounding wall-sized screens and a moving floor. The player races through a mine cave while attacking enemies and collecting gems.
+            <br><br>Created During: National High School Game Academy (Carnegie Mellon University Pre-College)
+            <br><br>Role: Lead Programmer
+            <br><br>Languages/Tools Used: C#, Unity
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img class="pic gem-pic" src="images/gem-start-screen.jpg" alt="Start screen of game in the CAVE">
+          <p>Start Screen</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div style="margin-top:5px" class="col-sm-12">
+          <img class="pic gem-pic small-pic" src="images/gem-tilt.gif" alt="Gif of player tilting">
+          <img class="pic gem-pic small-pic" src="images/gem-gem.gif" alt="Gif of gem collection">
+          <img class="pic gem-pic small-pic" src="images/gem-bat.gif" alt="Gif of enemy bat">
+        </div> -->
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/gem-tilt.gif" alt="Gif of player tilting">
+          <p>Player Tilting</p>
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/gem-gem.gif" alt="Gif of gem collection">
+          <p>Collecting Gem</p>
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic gem-row-pic" src="images/gem-bat.gif" alt="Gif of enemy bat">
+          <p>Attacking Enemy Bat</p>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Chinese Checkers AI-->
+    <div id="chinese-checkers" class="row app">
+      <div class="col-sm-6">
+        <h2 class="book-title">Chinese Checkers AI</h2>
+        <p class="app-descrip">An AI that can play Chinese Checkers, a board game in which players race to get their pieces to the opposite corner. The program calculates the best move to take using locally optimized strategies.
+          <br><br>Created During: Norcal Hacks
+          <br><br>Awarded: First Place out of 100+ participants
+          <br><br>Languages/Tools Used: Java
+          <br><br><a href="https://devpost.com/software/noise-alerter" target="blank" class="app-link">Full Demo</a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img class="pic checkers-pic" src="images/checkers.gif" alt="Gif of me playing Chinese Checkers against AI">
+        <p style="font-size:20px">Red = me, Green = AI</p>
+        <p style="font-size:12px">Disclaimer: Used open-source code for GUI</p>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Schedulable-->
+    <div id="schedulable" class="row app">
+      <div class="col-sm-6">
+        <h2 class="book-title">Schedulable</h2>
+        <p class="app-descrip">A productivity app that displays the user's schedule in a color-coded clock. The app also uses text-to-speech to notify the user when it is time to start their next task.
+          <br><br>Created During: CodeHers Hack
+          <br><br>Awarded: Best App out of 100+ participants
+          <br><br>Languages/Tools Used: Java, Android Studio
+          <br><br><a href="https://devpost.com/software/schedulable" target="blank" class="app-link">Full Demo</a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img class="pic app-pic" src="images/schedulable-events.gif" alt="Gif of user inputting schedule">
+        <img class="pic app-pic" src="images/schedulable-clock.gif" alt="Gif of clock GUI displaying schedule">
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Food Run -->
+    <div id="schedulable" class="row app">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="book-title">Egg Run</h2>
+          <p class="app-descrip">A 2D running game where the player rolls as an egg and then flies as a bird while avoiding obstacles. Uses realistic physically-based motion and collision detection and includes background music and sound effects.
+            <br><br>Created During: Superposition V Hackathon
+            <br><br>Awarded: Best Game out of 300+ participants
+            <br><br>Languages/Tools Used: Java, Android Studio
+            <br><br><a href="https://devpost.com/software/food-run-rl2kvo" target="blank" class="app-link">Full Demo</a>
+            <br><br>Added more features after the hackathon:
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img class="pic egg-pic" src="images/egg-run-egg.gif" alt="Gif of egg rolling, jumping, and turning into bird">
+          <img class="pic egg-pic" src="images/egg-run-bird.gif" alt="Gif of bird flying">
+        </div>
+      </div>
+      <div class="row">
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic food-row-pic" src="images/food-run.png" alt="Home screen of game">
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic food-row-pic" src="images/food-run-donut.gif" alt="Player collecting ingredients">
+        </div>
+        <div style="margin-top:5px" class="col-sm-4">
+          <img class="pic food-row-pic" src="images/food-run-balloon.gif" alt="Donut flying with balloon and winning">
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- T*bert -->
+    <div id="tbert" class="row app">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="book-title">T*Bert</h2>
+          <p class="app-descrip">A remake of the arcade game Q*bert with added features and changed theme. The player controls the green dinosaur and tries to turn all of the tiles yellow while avoiding enemies like the purple frog.
+            <br><br>Created During: National High School Game Academy
+            <br><br>Role: Programmer
+            <br><br>Languages/Tools Used: C#, Unity
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img class="pic gem-pic" src="images/tbert-tiles.gif" alt="T-rex jumping on colorful tiles">
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <!-- Notle-->
+    <div id="notle" class="row app">
+      <div class="col-sm-6">
+        <h2 class="book-title">Notle</h2>
+        <p class="app-descrip">An ear training game inspired by Wordle but instead of guessing a word, the player guesses the notes in a melody that is played. Provides a fun and engaging way for musicians to hone their listening skills.
+          <br><br>Created During: Sonoma Hacks
+          <br><br>Languages/Tools Used: Java, Android Studio
+          <br><br><a href="https://devpost.com/software/notle" target="blank" class="app-link">Full Demo</a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img class="pic app-pic" src="images/notle-home.png" alt="Home screen of Notle with levels">
+        <img class="pic app-pic" src="images/notle.gif" alt="Player guessing the melody">
+      </div>
+    </div>
+   
+    <div style="clear:both"></div>
+  </div>
+ 
+  <!-- Translations -->
+  <div id="translations" class="row section">
+    <h2 class="section-title white-text">Translations</h2>
+    <!-- the governor is sick -->
+    <div id="governor" class="row book">
+      <div class="col-sm-6 text-center">
+        <h2 class="white-text book-title">The Governor is Sick (督主有病)</h2>
+        <img class="pic book-pic" src="images/governor.jpg" alt="Book Cover">
+      </div>
+      <div class="col-sm-6">
+        <p class="white-text book-length">466,000 words; 1,031 pages; 134 chapters</p>
+        <a href="https://www.novelupdates.com/series/governors-illness/" target="blank"><p class="book-link">Readers: 2005</p></a>
+        <a href="https://www.novelupdates.com/series/governors-illness/" target="blank"><p class="book-link">Rating: 4.5/5</p></a>
+        <p class="white-text"><em>A novel set in ancient China following the lives of an assassin and the governor of the Eastern Depot.</em></p>
+        <p class="white-text">As an indomitable assassin and the most wanted criminal of the Eastern Depot, Xiahou Lian did not expect that the delicate youth he had met in his childhood would become a powerful and arrogant governor. As for that governor, there was a beam of white moonlight in his heart, a memory of someone he had coveted for a long time yet was out of reach.</p>
+        <a href="https://docs.google.com/document/d/1YQ1Uwt0LbE9Uzji7DYoRwgfDixtr7uwLA_yIWNy7O9M/edit?usp=sharing" target="blank"><p class="book-link">Read Volume 1!</p></a>
+        <a href="https://docs.google.com/document/d/1RfvWA0IjcEDs_VPfttNYWZpkHoy74xwQYsf3z5AH9ws/edit?usp=sharing" target="blank"><p class="book-link">Read Volume 2!</p></a>
+      </div>
+    </div>
+    <!-- nirvana rebirth -->
+    <div id="nirvana-rebirth" class="row book">
+      <div class="col-sm-6 text-center">
+        <h2 class="white-text book-title">Nirvana Rebirth / Astrolabe Reboot<br>(星盘重启)</h2>
+        <img class="pic vertical-book book-pic" src="images/nirvana-rebirth.png" alt="Book Cover">
+      </div>
+      <div class="col-sm-6">
+        <p class="white-text book-length">93,000 words; 251 pages; 19 chapters</p>
+        <a href="https://www.novelupdates.com/series/nirvana-rebirth/" target="blank"><p class="book-link">Readers: 2291</p></a>
+        <a href="https://www.novelupdates.com/series/nirvana-rebirth/" target="blank"><p class="book-link">Rating: 4.6/5</p></a>
+        <p class="white-text"><em>A dystopian novel about a human who winds up at the head of the resistance against the tyranny.</em></p>
+        <p class="white-text"></p>
+        <a href="https://docs.google.com/document/d/1LGXxeQR991klaStyszNrfIj7S6BDu8N41smz_-pgvL4/edit?usp=sharing" target="blank"><p class="book-link">Read here!</p></a>
+      </div>
+    </div>
+    <!-- special case files of rebirth -->
+    <div id="case-files" class="row book">
+      <div class="col-sm-6 text-center">
+        <h2 class="white-text book-title">Special Case Files of Rebirth<br>(重生之特别案卷)</h2>
+        <img class="pic book-pic vertical-book" src="images/case-files.jpg" alt="Book Cover">
+      </div>
+      <div class="col-sm-6">
+        <p class="white-text book-length">267,000 words; 761 pages; 132 chapters</p>
+        <a href="https://www.novelupdates.com/series/special-case-files-of-rebirth/" target="blank"><p class="book-link">Readers: 2588</p></a>
+        <a href="https://www.novelupdates.com/series/special-case-files-of-rebirth/" target="blank"><p class="book-link">Rating: 4.3/5</p></a>
+        <p class="white-text"><em>A modern mystery novel about an assassin-turned-policeman.</em></p>
+        <p class="white-text">After the mighty assassin Hei Xiao is assassinated, he wakes up as policeman Guan Jin, a member of the Special Cases Unit. Hei Xiao seeks to avenge himself while carefully keeping his true identity concealed. However, the more crimes he solves, the more he realizes that perhaps his new life wouldn't be so bad.</p>
+        <a href="https://docs.google.com/document/d/1mzkc7VmA5PTBCJzbHt0gVWRbHrJdgROHj1RMZzorw1U/edit?usp=sharing" target="blank"><p class="book-link">Read here!</p></a>
+      </div>
+    </div>
+    <!-- falling in love in the supernatural world -->
+    <div id="supernatural-world" class="row book">
+      <div class="col-sm-6 text-center">
+        <h2 class="white-text book-title">Falling in Love in the <br>Supernatural World<br>(在灵异世界里谈恋爱)</h2>
+        <img class="pic book-pic bigger-book" src="images/supernatural-world.jpg" alt="Book Cover">
+      </div>
+      <div class="col-sm-6">
+        <p class="white-text book-length">120,000 words; 280 pages; 47 chapters</p>
+        <a href="https://www.novelupdates.com/series/falling-in-love-in-the-supernatural-world/" target="blank"><p class="book-link">Readers: 1828</p></a>
+        <a href="https://www.novelupdates.com/series/falling-in-love-in-the-supernatural-world/" target="blank"><p class="book-link">Rating: 4.1/5</p></a>
+        <p class="white-text"><em>A mystery thriller novel about an actor who gets mixed up in supernatural occurences.</em></p>
+        <p class="white-text"></p>
+        <a href="https://docs.google.com/document/d/15MXIFf7Fgv4CN6RBK1ZYe20h3eHci8kT6OfpPJGcqCU/edit?usp=sharing" target="blank"><p class="book-link">Read here!</p></a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+
+  <!-- Websites -->
+  <div id="websites" class="row section">
+    <h2 class="section-title white-text">Websites</h2>
+    <!-- Elevate Hacks -->
+    <div class="row">
+      <h2 class="web-title"><a href="https://elevatetech.codes/elevatehacks.html" target="blank" class="white-text" style="text-decoration-line:underline">Elevate Hacks</a></h2>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/elevate-home.png" alt="Homepage of ElevateHacks website"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/elevate-prizes.png" alt="Hackathon prizes"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/elevate-schedule.gif" alt="Gif of user clicking through schedule on website"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/elevate-faq.gif" alt="Gif of user expanding boxes on website"></div>
+    </div>
+    <hr class="white-line">
+    <!-- Trebled Earth -->
+    <div class="row" style="margin-top:5%">
+      <h2 class="web-title"><a href="https://www.trebledearth.com/" target="blank" class="white-text" style="text-decoration-line:underline">Trebled Earth</a></h2>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/trebled-home.png" alt="Homepage of Trebled Earth"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/trebled-me.png" alt="List and pictures of organizers"></div>
+    </div>
+    <hr class="white-line">
+     <!-- iTalented -->
+     <div class="row" style="margin-top:5%">
+      <h2 class="web-title white-text">iTalented Tutoring Organization</h2>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/italented-home.png" alt="Homepage of iTalented"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/italented-score.png" alt="Quiz result page"></div>
+    </div>
+    <hr class="white-line">
+    <!-- Mathcounts -->
+    <div class="row" style="margin-top:5%">
+      <h2 class="web-title white-text">Northwest Santa Clara Valley Mathcounts</h2>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/math-home.png" alt="Homepage of Mathcounts"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/math-sponsors.png" alt="Mathcounts sponsors"></div>
+    </div>
+    <hr class="white-line">
+    <!-- iCount -->
+    <div class="row" style="margin-top:5%">
+      <h2 class="web-title white-text">iCount Math Club</h2>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/icount-home.png" alt="Homepage of iCount"></div>
+      <div class="col-sm-6"><img class="pic web-pic" src="images/icount-info.png" alt="Sections of iCount"></div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+
+  <!-- Art -->
+  <div id="art" class="row">
+    <h2 class="section-title" id="about-me-title">Art</h2>
+    <div class="row" style="margin-bottom:5%">
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-mgg.jpg" alt="Portrait drawing">
+        <p>graphite | 2023</p>
+      </div>
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-backpack.jpg" alt="Backpack drawing">
+        <p>graphite, color pencil, pen | 2022</p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:5%">
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-notam.jpg" alt="Collage of girl in city">
+        <p>paper, exacto knife | 2022</p>
+      </div>
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-umbrella.jpg" alt="Umbrella by lake painting">
+        <p>tempera paint | 2023</p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:5%">
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/edit-moons.jpg" alt="Digital edit of moons on reflective ground">
+        <p>digital photo manipulation, Gimp, stock photos | 2021</p>
+      </div>
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/edit-dandelion.jpg" alt="Digital edit of girl in dandelion hot air balloon">
+        <p>digital photo manipulation, Gimp, stock photos | 2021</p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:5%">
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-dog.jpg" alt="Dog painting">
+        <p>acrylic paint | 2015</p>
+      </div>
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-houses.jpg" alt="Houses painting">
+        <p>acrylic paint | 2015</p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:5%">
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-black-flowers.jpg" alt="Flowers drawing">
+        <p>color pencil | 2015</p>
+      </div>
+      <div class="col-sm-6 text-center pic">
+        <img class="pic art-pic" src="images/art-tree.jpg" alt="Tree drawing">
+        <p>color pencil | 2015</p>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+</div>
+</body>
