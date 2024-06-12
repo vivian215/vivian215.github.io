@@ -253,6 +253,27 @@ p {
     margin-right: 5%;
 }
 
+.vid {
+    max-width: 90%;
+    margin-right: 10%;
+}
+
+.vid.app-pic.hide-controls::-webkit-media-controls {
+    display: none !important;
+}
+
+.vid.app-pic.hide-controls::-moz-media-controls {
+    display: none !important;
+}
+
+.vid.hide-controls::-ms-media-controls {
+    display: none !important;
+}
+
+.vid.hide-controls::media-controls {
+    display: none !important;
+}
+
 .pro-pic {
     max-width: 80%;
 }
